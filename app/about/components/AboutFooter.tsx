@@ -23,6 +23,7 @@ const AboutFooter = () => {
           bgColor="bg-white"
           linkSrc="/work"
           textColor="text-[#292929]"
+          targetTab="_self"
         />
       </div>
     </div>

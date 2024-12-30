@@ -6,6 +6,7 @@ type CustomButtonProps = {
   btnText: string;
   bgColor: string;
   textColor: string;
+  targetTab: string;
 };
 
 const CustomButton = ({
@@ -13,9 +14,10 @@ const CustomButton = ({
   btnText,
   bgColor,
   textColor,
+  targetTab,
 }: CustomButtonProps) => {
   return (
-    <Link href={linkSrc} target="_blank">
+    <Link href={linkSrc} target={targetTab}>
       <div
         className={`flex items-center justify-center py-[10px] pl-5 pr-4 rounded-xl shadow-2xl gap-1 ${bgColor}`}
       >

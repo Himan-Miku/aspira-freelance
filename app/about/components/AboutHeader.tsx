@@ -118,6 +118,7 @@ const AboutHeader = () => {
           btnText="Book a Call Now"
           bgColor="bg-[#272a2e]"
           textColor="text-white"
+          targetTab="_blank"
         />
       </div>
     </div>
