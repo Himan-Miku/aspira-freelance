@@ -45,7 +45,7 @@ const projectsInfo = [
     author: "Deepanshu Sharma",
     tech: ["Android", "Flutter", "Docker", "AWS", "Solidity"],
     timeRequired: "5 Weeks",
-    images: ["/deep1.png", "/deep2.png", "/deep3.png"],
+    images: ["/deep-final.png", "/deep1.png", "/deep2.png", "/deep3.png"],
     problems: [
       "Decentralized Storage : Users lack a single platform to securely store and organize their diverse health records.",
       "Data Security and Integrity : Sharing sensitive medical records with healthcare providers, friends, or family often involves insecure methods, raising concerns about privacy and data tampering.",
