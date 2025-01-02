@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Onest, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <div className="relative flex  flex-col">
           <Nav></Nav>
           {children}
+          <Footer />
         </div>
       </body>
     </html>
