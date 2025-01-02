@@ -9,7 +9,7 @@ import {
 
 const FAQs = () => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center  my-20">
+    <div className="flex flex-col gap-4 items-center justify-center  my-20 mt-28">
       <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
         <FaCircleQuestion className="" />
         FAQ's
