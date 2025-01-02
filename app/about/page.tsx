@@ -9,7 +9,8 @@ const AboutPage = () => {
   return (
     <main className="mt-16 flex flex-col items-center justify-center gap-32">
       <AboutHeader />
-      {/* <AboutValues /> */}
+
+      <AboutValues />
       <AboutLeads />
       <AboutFooter />
     </main>

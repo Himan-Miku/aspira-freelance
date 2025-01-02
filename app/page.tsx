@@ -1,101 +1,161 @@
+import FAQs from "@/components/FAQs";
+import Services from "@/components/services";
+import Solutions from "@/components/solutions";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import { FaMagic } from "react-icons/fa";
+import {
+  MdKeyboardArrowRight,
+  MdOutlineReportGmailerrorred,
+} from "react-icons/md";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 ">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="">
+      <div className="flex justify-center items-center flex-col min-h-[80vh] ">
+        <div className="flex justify-center px-4 items-center border shadow-md p-1 rounded-3xl text-sm font-normal">
+          <h3 className="font-jet-mono  text-neutral-500">
+            Your go-to Team for Websites & Apps
+          </h3>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <h1 className="text-6xl sm:text-6xl font-medium mt-2 leading-[68px] flex flex-col ">
+          <p className=" text-center">We turn your ideas into</p>
+          <p className="text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+            unique software products
+          </p>
+        </h1>
+        <div>
+          <p className="text-neutral-600 text-center text-base font-light mt-4  max-w-[480px] ">
+            From design and development to deployment, we create custom websites
+            and apps that perfectly align with your vision.
+          </p>
+        </div>
+        <div className="flex gap-4 mt-8">
+          <div className="flex flex-col ">
+            <Button className="rounded-lg text-base font-normal bg-gray-950 shadow-xl">
+              Book a call Now
+              <MdKeyboardArrowRight width={20} height={20} />
+            </Button>
+            <p className="text-xs  text-neutral-500 text-center">
+              Response within 12 hours
+            </p>
+          </div>
+          <Button className="bg-white shadow-lg text-black hover:bg-white hover:text-neutral-700">
+            View our work
+          </Button>
+        </div>
+      </div>
+      <div className="flex flex-col gap-9 items-center justify-center h-[300px]">
+        <h2 className="font-medium text-4xl leading-[44px] text-center">
+          Certified by Industry Leaders You Trust
+        </h2>
+        <div className="flex gap-14 ">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/companyLogo/google.png"
+            alt="google"
+            width={54}
+            height={55}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/companyLogo/android.png"
+            alt="android"
+            width={60}
+            height={60}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <Image src="/companyLogo/aws.png" alt="aws" width={89} height={54} />
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="/companyLogo/meta-icon.png"
+            alt="Meta"
+            width={80}
+            height={54}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <Image
+            src="/companyLogo/googlecloud.png"
+            alt="googlecloud"
+            width={68}
+            height={54}
+          />
+        </div>
+      </div>
+      <div className="flex flex-col gap-3 justify-center items-center mt-20">
+        <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
+          <MdOutlineReportGmailerrorred className="text-red-700" /> The Problems
+        </p>
+        <h2 className="font-medium text-4xl leading-[44px] text-center ">
+          We provide solutions for Your Most Pressing Digital Issues
+        </h2>
+        <div className="grid grid-cols-1 md:h-[220px] justify-center   text-xl  lg:text-2xl  max-w-[1150px] gap-6 md:grid-cols-3   mt-10  border-[#FEE9EA] border-[5px] rounded-3xl m-1 p-1">
+          <div className="flex   ">
+            <div className="mx-4  mt-6 flex flex-col   ">
+              <Image
+                src="/home/problem2.png"
+                alt="problem2"
+                width={34}
+                height={34}
+              ></Image>
+              <p>Need visually stunning and user-friendly websites and apps</p>
+            </div>
+            <Separator
+              orientation="vertical"
+              className="w-[1px]  bg-[#FEE9EA] hidden md:block"
+            />
+          </div>
+
+          <div className="flex ">
+            <div className="mx-4  mt-6 gap-4 flex flex-col m-1  ">
+              <Image
+                src="/home/problem1.png"
+                alt="problem1"
+                width={34}
+                height={34}
+              ></Image>
+              <p>Looking for a skilled team to outsource your projects</p>
+            </div>
+            <Separator
+              orientation="vertical"
+              className="w-[1px] bg-[#FEE9EA] hidden md:block"
+            />
+          </div>
+
+          <div className="flex flex-col  gap-3  p-4 m-1  ">
+            <Image
+              src="/home/problem3.png"
+              alt="problem3"
+              width={34}
+              height={34}
+            ></Image>
+            <p>Want end-to-end support from development to deployment</p>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-3 justify-center items-center mt-32">
+        <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
+          <FaMagic className="" /> Our Solutions
+        </p>
+        <h2 className="font-medium text-4xl leading-[44px] text-center w-[600px]">
+          Effective Solutions to Overcome Your Digital Roadblocks{" "}
+        </h2>
+        <Solutions />
+      </div>
+      <div className="flex bg-[#F7F7F7] justify-between items-center mt-20 lg:mx-32 md:mx-24 mx-16">
+        <div className="flex flex-col justify-start items-start gap-4 p-10 ">
+          <h2 className="text-[28px] leading-[24px] font-medium text-left">
+            Want to see our previous work?{" "}
+          </h2>
+          <p className="text-lg text-neutral-500">
+            Explore our diverse portfolio of design and development projects.
+          </p>
+        </div>
+        <div className="mr-10 p-5">
+          <Button className="bg-white shadow-lg text-lg text-black hover:bg-white hover:text-neutral-700">
+            View Our Work <MdKeyboardArrowRight width={20} height={20} />
+          </Button>
+        </div>
+      </div>
+      <Services />
+      <FAQs />
+    </main>
   );
 }
