@@ -20,7 +20,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <h1 className="text-6xl sm:text-6xl font-medium mt-2 leading-[68px] flex flex-col ">
+        <h1 className="text-6xl tracking-[-1px] sm:text-6xl font-medium mt-2 leading-[68px] flex flex-col ">
           <p className=" text-center">We turn your ideas into</p>
           <p className="text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
             unique software products
@@ -33,7 +33,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex gap-4 mt-8">
-          <div className="flex flex-col ">
+          <div className="flex flex-col gap-4 ">
             <Button className="rounded-lg text-base font-normal bg-gray-950 shadow-xl">
               Book a call Now
               <MdKeyboardArrowRight width={20} height={20} />
@@ -42,7 +42,7 @@ export default function Home() {
               Response within 12 hours
             </p>
           </div>
-          <Button className="bg-white shadow-lg text-black hover:bg-white hover:text-neutral-700">
+          <Button className="bg-white rounded-lg shadow-lg text-black hover:bg-white hover:text-neutral-700">
             View our work
           </Button>
         </div>
@@ -83,12 +83,12 @@ export default function Home() {
         <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
           <MdOutlineReportGmailerrorred className="text-red-700" /> The Problems
         </p>
-        <h2 className="font-medium text-4xl leading-[44px] text-center ">
+        <h2 className="font-medium text-4xl leading-[44px] text-center max-w-[600px] ">
           We provide solutions for Your Most Pressing Digital Issues
         </h2>
         <div className="grid grid-cols-1 md:h-[220px] justify-center   text-xl  lg:text-2xl  max-w-[1150px] gap-6 md:grid-cols-3   mt-10  border-[#FEE9EA] border-[5px] rounded-3xl m-1 p-1">
           <div className="flex   ">
-            <div className="mx-4  mt-6 flex flex-col   ">
+            <div className="mx-4  mt-6 flex flex-col   gap-4">
               <Image
                 src="/home/problem2.png"
                 alt="problem2"
@@ -134,7 +134,7 @@ export default function Home() {
         <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
           <FaMagic className="" /> Our Solutions
         </p>
-        <h2 className="font-medium text-4xl leading-[44px] text-center w-[600px]">
+        <h2 className="font-medium text-4xl leading-[44px] text-center max-w-[600px]">
           Effective Solutions to Overcome Your Digital Roadblocks{" "}
         </h2>
         <Solutions />

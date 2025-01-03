@@ -14,7 +14,7 @@ const Services = () => {
       <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
         <BiSolidBadgeDollar className="" /> Pricing
       </p>
-      <h2 className="font-medium text-4xl leading-[44px] text-center w-[600px]">
+      <h2 className="font-medium text-4xl leading-[44px] text-center max-w-[600px]">
         Website & App Packages Designed to Suit Your Budget and Goals{" "}
       </h2>
       <div className="flex flex-col gap-6 mt-6">
@@ -74,7 +74,7 @@ const Services = () => {
             </div>
             <CallButtton />
           </div>
-          <div>
+          <div className="w-[440px] h-[440px] flex justify-center items-center">
             <DotLottieReact
               src="https://lottie.host/4e5184d2-a25c-4a97-aa09-d7c8ffc518ba/J7d0ewr1R4.lottie"
               loop
@@ -138,7 +138,7 @@ const Services = () => {
             </div>
             <CallButtton />
           </div>
-          <div>
+          <div className="w-[440px] h-[440px] flex justify-center items-center">
             <DotLottieReact
               src="https://lottie.host/ad0da6c5-a8e5-4fab-9255-8e9a7ebfb703/2vdE4hg2WP.lottie"
               loop
@@ -201,11 +201,12 @@ const Services = () => {
             </div>
             <CallButtton />
           </div>
-          <div>
+          <div className="w-[440px] h-[440px] flex justify-center items-center">
             <DotLottieReact
               src="https://lottie.host/23562f17-ae14-4fdf-8adc-dd3b137a81d1/xxveDUptA9.lottie"
               loop
               autoplay
+              className=""
             />
           </div>
         </div>
@@ -222,7 +223,7 @@ const Services = () => {
         </div>
         <div>
           <Link href={"https://cal.com/vineet-babar"}>
-            <Button className="rounded-lg text-base font-normal bg-white text-black shadow-xl">
+            <Button className="rounded-xl text-base font-normal bg-white text-black shadow-xl hover:bg-white hover:text-black">
               Contact Us
               <MdKeyboardArrowRight width={20} height={20} />
             </Button>
