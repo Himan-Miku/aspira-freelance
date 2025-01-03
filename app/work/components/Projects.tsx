@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="grid grid-cols-2 grid-rows-3 gap-x-7 gap-y-10 w-10/12 place-items-center">
+    <div className="grid grid-cols-2 grid-rows-3 md:mx-20 mx-4 place-items-center gap-8">
       {projectsInfo.map((p) => {
         return (
           <ProjectCard

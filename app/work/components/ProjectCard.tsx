@@ -17,16 +17,17 @@ const ProjectCard = ({
   id,
 }: projectCardProps) => {
   return (
-    <div className="flex flex-col gap-4 items-start justify-center w-3/4">
+    <div className="flex flex-col gap-4 items-start justify-center  ">
       <div className="p-image rounded-[26px] bg-[#f7f7f7] overflow-hidden">
         <Image
           src={thumbnail}
           alt="thumbnail-project"
-          height={250}
-          width={500}
+          height={400}
+          width={600}
+          className="rounded-[40px]"
         />
       </div>
-      <div className="p-summary flex flex-col gap-4">
+      <div className="p-summary flex flex-col gap-4 max-w-[600px]">
         <div className="p-tags flex gap-3">
           {tags.map((t, i) => {
             return (
@@ -36,13 +37,13 @@ const ProjectCard = ({
             );
           })}
         </div>
-        <div className="p-info flex justify-between items-center">
+        <div className="p-info flex justify-between items-center tracking-[-1%]">
           <div className="flex flex-col gap-1 text-start">
             <div className="p-title">
-              <p className="font-medium text-lg">{title}</p>
+              <p className="font-medium text-2xl leading-[40px] ">{title}</p>
             </div>
             <div className="p-desc">
-              <p className="text-[#515151] text-sm">{description}</p>
+              <p className="text-[#515151] text-base">{description}</p>
             </div>
           </div>
           <div className="p-view">

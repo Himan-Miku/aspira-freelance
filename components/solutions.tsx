@@ -4,11 +4,13 @@ import { FaReact } from "react-icons/fa";
 
 const Solutions = () => {
   return (
-    <div className="flex flex-col gap-4 mx-4 lg:mx-36 m-12">
+    <div className="flex flex-col gap-4 mx-4 lg:mx-36 sm:m-12 m-2">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="flex  gap-4 justify-center items-center">
-          <span className="text-4xl md:text-5xl font-medium text-end ">1.</span>
-          <div className="">
+        <div className="flex  gap-4 ">
+          <span className="text-4xl md:text-5xl font-medium lg:pt-[145px] ">
+            1.
+          </span>
+          <div className="flex justify-center  flex-col">
             <div className="mb-6 relative font-medium">
               <div className="flex items-center justify-start gap-4">
                 <h2 className="text-nowrap text-4xl md:text-5xl font-medium ">
@@ -50,9 +52,11 @@ const Solutions = () => {
             fill={true}
           ></Image>
         </div>
-        <div className="flex  gap-4 justify-center items-center lg:ml-7">
-          <span className="text-4xl md:text-5xl font-medium text-end ">2.</span>
-          <div className="">
+        <div className="flex  gap-4  lg:ml-7">
+          <span className="text-4xl md:text-5xl font-medium text-end lg:pt-[145px] ">
+            2.
+          </span>
+          <div className="flex flex-col justify-center ">
             <div className="mb-6 relative font-medium">
               <div className="flex items-center justify-start gap-4">
                 <h2 className="text-nowrap text-4xl md:text-5xl font-medium ">
@@ -82,9 +86,11 @@ const Solutions = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="flex  gap-4 justify-center items-center">
-          <span className="text-4xl md:text-5xl font-medium text-end ">3.</span>
-          <div className="">
+        <div className="flex  gap-4 ">
+          <span className="text-4xl lg:pt-[145px] md:text-5xl font-medium text-end ">
+            3.
+          </span>
+          <div className="flex justify-center  flex-col">
             <div className="mb-6 relative font-medium">
               <div className="flex items-center justify-start gap-4">
                 <h2 className="text-nowrap text-4xl md:text-5xl font-medium ">

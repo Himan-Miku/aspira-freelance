@@ -14,13 +14,12 @@ const Footer = () => {
     <div className="sticky   px-4 md:px-28 my-10 p-2 top-0 z-50  border-y bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex justify-between items-center font-onest-sans font-medium h-24">
       <div className="flex items-center justify-center gap-3">
         <Image
-          src="/logo.png"
+          src="/logo.svg"
           alt="logo"
-          width={32}
-          height={32}
-          className=" h-8 w-8"
+          width={165}
+          height={36}
+          className=" "
         />
-        <p>Doraemon</p>
       </div>
       <Navlinks />
       <div className="flex items-center justify-center gap-3">
