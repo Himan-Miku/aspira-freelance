@@ -17,7 +17,7 @@ const ProjectCard = ({
   id,
 }: projectCardProps) => {
   return (
-    <div className="flex flex-col gap-4 items-start justify-center  ">
+    <div className="flex flex-col gap-4 items-start justify-center w-full">
       <div className="p-image rounded-[26px] bg-[#f7f7f7] overflow-hidden">
         <Image
           src={thumbnail}
@@ -27,8 +27,8 @@ const ProjectCard = ({
           className="rounded-[40px]"
         />
       </div>
-      <div className="p-summary flex flex-col gap-4 max-w-[600px]">
-        <div className="p-tags flex gap-3">
+      <div className="p-summary flex flex-col md:gap-4 gap-2 max-w-[600px] w-full">
+        <div className="p-tags flex md:gap-3 gap-2 flex-wrap">
           {tags.map((t, i) => {
             return (
               <div key={i} className="py-1 px-3 bg-[#f2f2f2] rounded-full">
@@ -37,13 +37,17 @@ const ProjectCard = ({
             );
           })}
         </div>
-        <div className="p-info flex justify-between items-center tracking-[-1%]">
+        <div className="p-info flex justify-between items-center tracking-[-1%] md:px-0 px-2">
           <div className="flex flex-col gap-1 text-start">
             <div className="p-title">
-              <p className="font-medium text-2xl leading-[40px] ">{title}</p>
+              <p className="font-medium md:text-2xl text-xl md:leading-[40px] leading-[30px]">
+                {title}
+              </p>
             </div>
             <div className="p-desc">
-              <p className="text-[#515151] text-base">{description}</p>
+              <p className="text-[#515151] text-base md:leading-6 leading-5">
+                {description}
+              </p>
             </div>
           </div>
           <div className="p-view">

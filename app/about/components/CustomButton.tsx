@@ -19,7 +19,7 @@ const CustomButton = ({
   return (
     <Link href={linkSrc} target={targetTab}>
       <div
-        className={`flex items-center justify-center py-[10px] pl-5 pr-4 rounded-xl shadow-2xl gap-1 ${bgColor}`}
+        className={`flex items-center justify-center py-[10px] md:pl-5 pl-4 md:pr-4 pr-3 rounded-xl shadow-2xl gap-1 ${bgColor} md:text-base text-sm max-w-fit`}
       >
         <div>
           <button className={textColor}>{btnText}</button>

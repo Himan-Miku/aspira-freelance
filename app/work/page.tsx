@@ -2,7 +2,7 @@ import { HeroWork, Projects } from "./components";
 
 const WorkPage = () => {
   return (
-    <main className="my-16 flex flex-col items-center justify-center gap-14">
+    <main className="md:mt-16 mt-10 flex flex-col items-center justify-center md:gap-14 gap-10">
       <HeroWork />
       <Projects />
     </main>
