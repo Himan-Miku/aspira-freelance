@@ -23,7 +23,7 @@ export default async function WorkInfo({
   const imgSrc = project.images[0];
 
   return (
-    <main className="mt-16 flex flex-col items-center justify-center gap-32 px-64">
+    <main className="mt-16 flex flex-col items-center justify-center md:gap-32 gap-20 md:px-64 px-6">
       <WorkHeader
         title={project.title}
         desc={project.description}
@@ -34,7 +34,9 @@ export default async function WorkInfo({
       />
       <WorkImage imgSrc={imgSrc} />
       <GeneralPoints generals={project.problems} mainHeading="Problems :" />
+      <hr className="w-full border-t-[1px] border-[#E6E6E6]" />
       <GeneralPoints generals={project.keyFeat} mainHeading="Key Features :" />
+      <hr className="w-full border-t-[1px] border-[#E6E6E6]" />
       <GeneralPoints generals={project.approaches} mainHeading="Approaches :" />
     </main>
   );
