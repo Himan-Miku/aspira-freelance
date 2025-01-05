@@ -3,6 +3,8 @@ import { Onest, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/MobileNav";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -29,11 +31,14 @@ export default function RootLayout({
       <body
         className={`${onest.variable} ${jetBrains_Mono.variable} antialiased`}
       >
-        <div className="relative flex  flex-col">
-          <Nav></Nav>
-          {children}
-          <Footer />
-        </div>
+        <SidebarProvider open={false}>
+          <AppSidebar />
+          <div className="relative flex  flex-col">
+            <Nav></Nav>
+            {children}
+            <Footer />
+          </div>
+        </SidebarProvider>
       </body>
     </html>
   );

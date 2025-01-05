@@ -1,3 +1,4 @@
+import CallButtton from "@/components/CallButtton";
 import FAQs from "@/components/FAQs";
 import Services from "@/components/services";
 import Solutions from "@/components/solutions";
@@ -15,43 +16,37 @@ export default function Home() {
     <main className="">
       <div className="flex justify-center items-center flex-col min-h-[80vh] ">
         <div className="flex justify-center px-4 items-center border shadow-md p-1 rounded-3xl text-sm font-normal">
-          <h3 className="font-jet-mono  text-neutral-500">
+          <h3 className="font-jet-mono  text-neutral-500 text-sm md:text-base">
             Your go-to Team for Websites & Apps
           </h3>
         </div>
 
-        <h1 className="text-6xl tracking-[-1px] sm:text-6xl font-medium mt-2 leading-[68px] flex flex-col ">
+        <h1 className="text-5xl md:text-6xl tracking-[-1px] sm:text-6xl font-medium mt-2 leading-[68px] flex flex-col ">
           <p className=" text-center">We turn your ideas into</p>
           <p className="text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
             unique software products
           </p>
         </h1>
         <div>
-          <p className="text-neutral-600 text-center text-base font-light mt-4  max-w-[480px] ">
+          <p className="text-neutral-600 text-center text-sm md:text-base font-light mt-4  max-w-[480px] ">
             From design and development to deployment, we create custom websites
             and apps that perfectly align with your vision.
           </p>
         </div>
         <div className="flex gap-4 mt-8">
           <div className="flex flex-col gap-4 ">
-            <Button className="rounded-lg text-base font-normal bg-gray-950 shadow-xl">
-              Book a call Now
-              <MdKeyboardArrowRight width={20} height={20} />
-            </Button>
-            <p className="text-xs  text-neutral-500 text-center">
-              Response within 12 hours
-            </p>
+            <CallButtton />
           </div>
           <Button className="bg-white rounded-lg shadow-lg text-black hover:bg-white hover:text-neutral-700">
             View our work
           </Button>
         </div>
       </div>
-      <div className="flex flex-col gap-9 items-center justify-center h-[300px]">
+      <div className="flex flex-col gap-12 items-center my-20  justify-center h-[300px]">
         <h2 className="font-medium text-4xl leading-[44px] text-center">
           Certified by Industry Leaders You Trust
         </h2>
-        <div className="flex gap-14 ">
+        <div className="sm:flex gap-14 flex justify-center mb-24  items-center flex-wrap">
           <Image
             src="/companyLogo/google.png"
             alt="google"
@@ -81,9 +76,10 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-3 justify-center items-center mt-20">
         <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
-          <MdOutlineReportGmailerrorred className="text-red-700" /> The Problems
+          <MdOutlineReportGmailerrorred className="text-red-700 text-sm md:text-base" />{" "}
+          The Problems
         </p>
-        <h2 className="font-medium text-4xl leading-[44px] text-center max-w-[600px] ">
+        <h2 className="font-medium text-3xl md:text-4xl leading-[44px] text-center max-w-[600px] ">
           We provide solutions for Your Most Pressing Digital Issues
         </h2>
         <div className="grid grid-cols-1 md:h-[220px] justify-center   text-xl  lg:text-2xl  max-w-[1150px] gap-6 md:grid-cols-3   mt-10  border-[#FEE9EA] border-[5px] rounded-3xl m-1 p-1">
@@ -131,25 +127,25 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-3 justify-center items-center mt-32">
-        <p className="flex gap-2 items-center rounded-xm shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
+        <p className="flex gap-2 items-center rounded-xm text-sm md:text-base shadow-sm border-neutral-200 border font-jet-mono text-neutral-500 rounded-3xl p-2 px-4">
           <FaMagic className="" /> Our Solutions
         </p>
-        <h2 className="font-medium text-4xl leading-[44px] text-center max-w-[600px]">
+        <h2 className="font-medium text-3xl md:text-4xl leading-[44px] text-center max-w-[600px]">
           Effective Solutions to Overcome Your Digital Roadblocks{" "}
         </h2>
         <Solutions />
       </div>
-      <div className="flex bg-[#F7F7F7] justify-between items-center mt-20 lg:mx-32 md:mx-24 mx-16">
+      <div className="flex bg-[#F7F7F7] flex-col md:flex-row justify-around items-center mt-20 lg:mx-32 md:mx-24 sm:mx-16 mx-4 p-2">
         <div className="flex flex-col justify-start items-start gap-4 p-10 ">
-          <h2 className="text-[28px] leading-[24px] font-medium text-left">
+          <h2 className="text-xl sm:text-[24px] leading-[24px] font-medium text-left">
             Want to see our previous work?{" "}
           </h2>
-          <p className="text-lg text-neutral-500">
+          <p className="sm:text-lg text-base text-neutral-500">
             Explore our diverse portfolio of design and development projects.
           </p>
         </div>
-        <div className="mr-10 p-5">
-          <Button className="bg-white shadow-lg text-lg text-black hover:bg-white hover:text-neutral-700">
+        <div className="p-1 md:p-5">
+          <Button className="bg-white shadow-lg text-base sm:text-lg text-black hover:bg-white hover:text-neutral-700">
             View Our Work <MdKeyboardArrowRight width={20} height={20} />
           </Button>
         </div>
