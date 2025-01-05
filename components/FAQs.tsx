@@ -20,7 +20,7 @@ const FAQs = () => {
       <Accordion
         type="single"
         collapsible
-        className="max-w-[960px] w-full my-14 text-base gap-5 flex flex-col "
+        className="max-w-[960px] w-full my-14 text-base sm:text-lg gap-5 flex flex-col "
       >
         <AccordionItem value="item-1">
           <AccordionTrigger>
