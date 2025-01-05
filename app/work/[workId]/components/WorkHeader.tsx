@@ -21,10 +21,10 @@ const WorkHeader = ({
 }: WorkHeaderProps) => {
   const technologies = tech.join(", ");
   return (
-    <div className="flex flex-col gap-16 items-start justify-center">
+    <div className="flex flex-col md:gap-16 gap-8 items-start justify-center">
       <div>
         <Link href={`/work`}>
-          <div className="flex gap-[6px] justify-center items-center py-2 pl-4 pr-5 rounded-xl shadow-sm border border-gray-[#d8d8d8]">
+          <div className="flex md:gap-[6px] gap-1 justify-center items-center py-2 md:pl-4 pl-2 md:pr-5 pr-3 rounded-xl shadow-sm border border-gray-[#d8d8d8]">
             <div>
               <Image
                 src={"/left-arrow.png"}
@@ -39,14 +39,16 @@ const WorkHeader = ({
           </div>
         </Link>
       </div>
-      <div className="flex flex-col gap-5 items-start justify-center">
-        <div className="text-[46px] font-medium">
+      <div className="flex flex-col md:gap-5 gap-3 md:px-0 px-2 items-start justify-center">
+        <div className="md:text-[46px] text-[32px] leading-tight font-medium">
           <p>{title}</p>
         </div>
-        <div className="w-3/4">
-          <p className="text-[#515151] text-xl">{desc}</p>
+        <div className="md:w-3/4 w-full">
+          <p className="text-[#515151] md:text-xl text-lg leading-snug">
+            {desc}
+          </p>
         </div>
-        <div className="flex gap-3 items-center justify-start">
+        <div className="flex gap-3 items-center justify-start flex-wrap">
           {tags.map((t, i) => {
             return (
               <div
@@ -59,7 +61,7 @@ const WorkHeader = ({
           })}
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center w-full pt-8">
+      <div className="flex md:flex-row flex-col justify-between md:items-center items-start md:gap-0 gap-6 w-full md:pt-8 pt-0">
         <LogoComponent
           Imgsrc={`/gg_profile.svg`}
           title="Project By"

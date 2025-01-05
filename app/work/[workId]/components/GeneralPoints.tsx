@@ -17,10 +17,10 @@ const GeneralPoints = ({
   return (
     <main className="flex flex-col gap-5 justify-center items-start">
       <div className="point-head">
-        <p className="text-[38px] font-medium">{mainHeading}</p>
+        <p className="md:text-[38px] text-[28px] font-medium">{mainHeading}</p>
       </div>
       {isStringArray ? (
-        <div className="points flex flex-col gap-[22px] items-center justify-center">
+        <div className="points flex flex-col md:gap-[22px] gap-3 items-center justify-center">
           {generals.map((p, i) => {
             return (
               <div
@@ -28,7 +28,7 @@ const GeneralPoints = ({
                 className="flex flex-row gap-5 items-start justify-start w-full"
               >
                 <div className="w-1/12 flex justify-center items-center">
-                  <div className="flex w-7 h-7 items-center justify-center gap-[10px] px-3 bg-[#f7f7f7] rounded-full max-w-fit">
+                  <div className="flex w-7 h-7 items-center justify-center gap-[10px] px-3 bg-[#f7f7f7] rounded-full max-w-fit pt-1">
                     <p>{i + 1}</p>
                   </div>
                 </div>
