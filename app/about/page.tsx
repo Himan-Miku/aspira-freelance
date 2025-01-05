@@ -7,11 +7,12 @@ import {
 
 const AboutPage = () => {
   return (
-    <main className="mt-16 flex flex-col items-center justify-center gap-32">
+    <main className="md:mt-16 mt-10 flex flex-col items-center justify-center md:gap-32 gap-20">
       <AboutHeader />
-
-      <AboutValues />
+      <hr className="w-full border-t-[1px] border-[#E6E6E6]" />
+      {/* <AboutValues /> */}
       <AboutLeads />
+      <hr className="w-full border-t-[1px] border-[#E6E6E6]" />
       <AboutFooter />
     </main>
   );
