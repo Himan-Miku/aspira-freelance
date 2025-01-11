@@ -2,6 +2,7 @@ import { projectsInfo } from "@/utils";
 import WorkHeader from "./components/WorkHeader";
 import WorkImage from "./components/WorkImage";
 import GeneralPoints from "./components/GeneralPoints";
+import GitRepoButton from "./components/GitRepoButton";
 
 export default async function WorkInfo({
   params,
@@ -31,6 +32,7 @@ export default async function WorkInfo({
         author={project.author}
         tech={project.tech}
         timePeriod={project.timeRequired}
+        link={project.githubRepo}
       />
       <WorkImage imgSrc={imgSrc} />
       <GeneralPoints generals={project.problems} mainHeading="Problems :" />
@@ -38,6 +40,7 @@ export default async function WorkInfo({
       <GeneralPoints generals={project.keyFeat} mainHeading="Key Features :" />
       <hr className="w-full border-t-[1px] border-[#E6E6E6]" />
       <GeneralPoints generals={project.approaches} mainHeading="Approaches :" />
+      <GitRepoButton link={project.githubRepo} />
     </main>
   );
 }

@@ -55,7 +55,7 @@ const Solutions = () => {
           </span>
           <div className="flex justify-center  flex-col flex-wrap">
             <div className="mb-6 relative font-medium text-3xl sm:text-4xl md:text-5xl">
-              <h2 className=" flex flex-wrap ">
+              <h2 className=" flex flex-wrap flex-col">
                 Outsource your projects to our expert
                 <div className="relative w-12 h-12">
                   <Image
@@ -80,7 +80,7 @@ const Solutions = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex  gap-2 ">
           <span className="text-3xl sm:text-4xl md:text-5xl font-medium lg:pt-[145px] ">
-            1.
+            3.
           </span>
           <div className="flex justify-center  flex-col flex-wrap">
             <div className="mb-6 relative font-medium text-3xl sm:text-4xl md:text-5xl">

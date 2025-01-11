@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <SidebarProvider open={false}>
           <AppSidebar />
-          <div className="relative flex  flex-col">
+          <div className="relative flex w-full flex-col">
             <Nav></Nav>
             {children}
             <Footer />

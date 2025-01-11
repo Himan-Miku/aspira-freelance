@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import LogoComponent from "./LogoComponent";
+import { BiRightArrow } from "react-icons/bi";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 type WorkHeaderProps = {
   title: string;
@@ -9,6 +11,7 @@ type WorkHeaderProps = {
   author: string;
   tech: Array<string>;
   timePeriod: string;
+  link: string;
 };
 
 const WorkHeader = ({
@@ -18,11 +21,12 @@ const WorkHeader = ({
   author,
   tech,
   timePeriod,
+  link,
 }: WorkHeaderProps) => {
   const technologies = tech.join(", ");
   return (
     <div className="flex flex-col md:gap-16 gap-8 items-start justify-center">
-      <div>
+      <div className="flex justify-between w-full">
         <Link href={`/work`}>
           <div className="flex md:gap-[6px] gap-1 justify-center items-center py-2 md:pl-4 pl-2 md:pr-5 pr-3 rounded-xl shadow-sm border border-gray-[#d8d8d8]">
             <div>

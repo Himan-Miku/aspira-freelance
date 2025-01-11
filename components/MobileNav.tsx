@@ -50,7 +50,7 @@ export function AppSidebar() {
   } = useSidebar();
   const pathname = usePathname();
   return (
-    <Sidebar collapsible="offcanvas" variant="floating" side="right">
+    <Sidebar collapsible="offcanvas" side="right">
       <SidebarContent className="mt-10 ">
         <SidebarGroup>
           <SidebarGroupContent className="">
