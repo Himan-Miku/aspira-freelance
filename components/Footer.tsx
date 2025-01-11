@@ -11,7 +11,7 @@ import { Separator } from "./ui/separator";
 
 const Footer = () => {
   return (
-    <div className="sticky   px-4 md:px-28 my-10 p-2 top-0 z-50  border-y bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex justify-between items-center font-onest-sans font-medium h-24">
+    <div className="sticky  flex-col gap-2 md:flex-row px-4 md:px-28 my-10 p-2 top-0 z-50  border-y bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex justify-between items-center font-onest-sans font-medium h-24">
       <div className="flex items-center justify-center gap-3">
         <Image
           src="/logo.svg"
@@ -22,12 +22,15 @@ const Footer = () => {
         />
       </div>
       <Navlinks />
-      <div className="flex items-center justify-center gap-3">
+      <div className="flex items-center justify-center gap-3 flex-col md:flex-row">
         <Link href="mailto:aspira@gmail.com" className="flex  items-center">
           <IoMdMail />
-          <p>aspira@gmail.com</p>
+          <p>vinnetbabbar081@gmail.com</p>
         </Link>
-        <Separator orientation="vertical" className="h-6 w-[2px]" />
+        <Separator
+          orientation="vertical"
+          className="h-6 w-[2px] hidden md:flex"
+        />
         <CallButtton />
       </div>
     </div>

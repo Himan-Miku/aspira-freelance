@@ -4,6 +4,7 @@ import Services from "@/components/services";
 import Solutions from "@/components/solutions";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import ViewWork from "@/components/ViewWork";
 import Image from "next/image";
 import { FaMagic } from "react-icons/fa";
 import {
@@ -13,7 +14,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="m-2">
       <div className="flex justify-center items-center flex-col min-h-[80vh] ">
         <div className="flex justify-center px-4 items-center border shadow-md p-1 rounded-3xl text-sm font-normal">
           <h3 className="font-jet-mono  text-neutral-500 text-sm md:text-base">
@@ -135,21 +136,7 @@ export default function Home() {
         </h2>
         <Solutions />
       </div>
-      <div className="flex bg-[#F7F7F7] flex-col md:flex-row justify-around items-center mt-20 lg:mx-32 md:mx-24 sm:mx-16 mx-4 p-2">
-        <div className="flex flex-col justify-start items-start gap-4 p-10 ">
-          <h2 className="text-xl sm:text-[24px] leading-[24px] font-medium text-left">
-            Want to see our previous work?{" "}
-          </h2>
-          <p className="sm:text-lg text-base text-neutral-500">
-            Explore our diverse portfolio of design and development projects.
-          </p>
-        </div>
-        <div className="p-1 md:p-5">
-          <Button className="bg-white shadow-lg text-base sm:text-lg text-black hover:bg-white hover:text-neutral-700">
-            View Our Work <MdKeyboardArrowRight width={20} height={20} />
-          </Button>
-        </div>
-      </div>
+      <ViewWork />
       <Services />
       <FAQs />
     </main>
