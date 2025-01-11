@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import Link from "next/link";
 
 const ViewWork = () => {
   return (
@@ -15,7 +16,9 @@ const ViewWork = () => {
       </div>
       <div className="p-1 md:p-5">
         <Button className="bg-white shadow-lg text-base sm:text-lg text-black hover:bg-white hover:text-neutral-700">
-          View Our Work <MdKeyboardArrowRight width={20} height={20} />
+          <Link href={"/work"} className="flex justify-center items-center">
+            View Our Work <MdKeyboardArrowRight width={20} height={20} />
+          </Link>
         </Button>
       </div>
     </div>

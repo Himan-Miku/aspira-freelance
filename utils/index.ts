@@ -40,7 +40,7 @@ const projectsInfo = [
     title: "Weddify-Helping users to plan & manage weddings effectively",
     isMobile: true,
     description:
-      "effortlessly handle vendor choice to fit your budget, communicate flawlessly with suppliers, dispatch invites to your visitors, and manage responses. ",
+      "effortlessly handle vendor choice to fit your budget ",
     tags: ["Ideation", "Design", "Figma"],
     author: "Vinnet Babar",
     tech: ["Figma"],
@@ -86,11 +86,11 @@ const projectsInfo = [
   },
   {
     id: 2,
-    thumbnail: "/work/healify.png",
+    thumbnail: "/work/Healify.png",
     title: "Healify - Secure Health, Simplified",
     isMobile: true,
     description:
-      "Healify is a health records management app designed to revolutionize the way we handle and share medical data, built using Flutter for a seamless user experience.",
+      "Healify is a health records management app to handle medical data",
     tags: ["App Development", "Flutter", "Android", "Blockchain"],
     author: "Deepanshu Sharma",
     tech: ["Android", "Flutter", "Docker", "AWS", "Solidity"],
@@ -294,7 +294,7 @@ const projectsInfo = [
     title: "Aspira-Job Portal ",
     isMobile: true,
     description:
-      " platform that bridges job seekers and employers, enabling seamless job postings, applications, and recruitment processes.",
+      " platform that bridges job seekers and employers",
     tags: ["UI/UX","Design"],
     author: "Vinnet Baber",
     tech: ["Android", "Flutter", "Docker", "AWS", "Solidity"],
