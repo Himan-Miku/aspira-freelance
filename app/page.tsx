@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import ViewWork from "@/components/ViewWork";
 import Image from "next/image";
+import Link from "next/link";
 import { FaMagic } from "react-icons/fa";
 import {
   MdKeyboardArrowRight,
@@ -22,11 +23,8 @@ export default function Home() {
           </h3>
         </div>
 
-        <h1 className="text-5xl md:text-6xl tracking-[-1px] sm:text-6xl font-medium mt-2 leading-[68px] flex flex-col ">
-          <p className=" text-center">We turn your ideas into</p>
-          <p className="text-center bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-            unique software products
-          </p>
+        <h1 className="text-5xl md:text-6xl tracking-[-2px] text-center sm:text-6xl font-medium mt-2 md:leading-[68px] flex flex-col ">
+          We turn your ideas into unqiue software products
         </h1>
         <div>
           <p className="text-neutral-600 text-center text-sm md:text-base font-light mt-4  max-w-[480px] ">
@@ -39,7 +37,7 @@ export default function Home() {
             <CallButtton />
           </div>
           <Button className="bg-white rounded-lg shadow-lg text-black hover:bg-white hover:text-neutral-700">
-            View our work
+            <Link href="/work">View our work</Link>
           </Button>
         </div>
       </div>
