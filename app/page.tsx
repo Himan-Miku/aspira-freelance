@@ -15,7 +15,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="m-2">
+    <main className="m-3 mx-4">
       <div className="flex justify-center items-center flex-col min-h-[80vh] ">
         <div className="flex justify-center px-4 items-center border shadow-md p-1 rounded-3xl text-sm font-normal">
           <h3 className="font-jet-mono  text-neutral-500 text-sm md:text-base">
