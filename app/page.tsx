@@ -23,7 +23,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <h1 className="text-5xl md:text-6xl tracking-[-2px] text-center sm:text-6xl font-medium mt-2 md:leading-[68px] flex flex-col ">
+        <h1 className="text-5xl md:text-6xl tracking-[-2px] max-w-[800px] text-center sm:text-6xl font-medium mt-2 md:leading-[68px] flex flex-col ">
           We turn your ideas into unqiue software products
         </h1>
         <div>
