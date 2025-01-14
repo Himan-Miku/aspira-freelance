@@ -11,13 +11,14 @@ type LeadCardProps = {
 
 const LeadCard = ({ name, title, desc, imageSrc, linkedIn }: LeadCardProps) => {
   return (
-    <div className="flex flex-row gap-4 md:gap-6 items-center justify-between">
+    <div className="flex flex-row gap-4 md:gap-6 items-start justify-between">
       <div className="w-2/5 md:w-1/3 h-full flex flex-col items-center">
         <Image
           className="aspect-square rounded-lg w-full"
           src={imageSrc}
           height={128}
           width={128}
+          layout="responsive"
           alt="lead_pic"
         />
         <div className="block md:hidden mt-2">
@@ -29,7 +30,7 @@ const LeadCard = ({ name, title, desc, imageSrc, linkedIn }: LeadCardProps) => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 md:gap-3 justify-center items-start w-3/5 md:w-2/3">
+      <div className="flex flex-col gap-2 md:gap-3 justify-start items-start w-3/5 md:w-2/3">
         <div className="flex flex-col gap-0">
           <div className="l-name">
             <p className="text-sm md:text-base font-medium">{name}</p>

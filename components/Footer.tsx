@@ -23,9 +23,12 @@ const Footer = () => {
       </div>
       <Navlinks />
       <div className="flex items-center justify-center gap-5 flex-col md:flex-row">
-        <Link href="mailto:aspira@gmail.com" className="flex  items-center">
+        <Link
+          href="mailto:vineetbabar08@gmail.com"
+          className="flex  items-center gap-3"
+        >
           <IoMdMail />
-          <p>vinnetbabbar081@gmail.com</p>
+          <p>vineetbabar08@gmail.com</p>
         </Link>
         <Separator
           orientation="vertical"
