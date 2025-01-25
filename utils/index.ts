@@ -27,7 +27,7 @@ const teamLeadInfo = [
     id: 4,
     name: "Himanshu Jagdale",
     title: "Deployment Engineer",
-    desc: "Dynamic Full Stack Developer specializing in cutting-edge web and cloud technologies. Certified in Google Cloud Platform (GCP) with a proven ability to seamlessly integrate the latest DevOps tools for creating scalable, efficient and robust solutions.",
+    desc: "Full Stack Developer specializing in web and cloud technologies. GCP certified with expertise in integrating DevOps tools.",
     linkedInSrc: "https://www.linkedin.com/in/himan-miku",
     profilePicSrc: "/leads/himanshu.jpeg",
   },
